@@ -14,7 +14,8 @@
     <app-list-draws></app-list-draws>
     }
     @case (2) {
-    <app-zwork-space></app-zwork-space>
+    <!-- <app-zwork-space></app-zwork-space> -->
+     <router-outlet />
     }
     @default {
     {{tile.text}}
@@ -24,4 +25,3 @@
   }
 </mat-grid-list>
 
-<router-outlet />
