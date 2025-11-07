@@ -12,6 +12,7 @@ import { PageDessinInformation } from './page-dessin-information/page-dessin-inf
 import { PageDessin } from './page-dessin/page-dessin';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,9 +27,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     MatGridListModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    MatInputModule,
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

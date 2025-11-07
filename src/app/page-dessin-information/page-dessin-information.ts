@@ -1,11 +1,15 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+// import { MatFormFieldModule } from '@angular/material/form-field';
+// import { MatInputModule } from '@angular/material/input';
+// import { MatSelectModule } from '@angular/material/select';
 
 @Component({
   selector: 'app-page-dessin-information',
   standalone: false,
   templateUrl: './page-dessin-information.html',
   styleUrl: './page-dessin-information.scss',
+  // changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PageDessinInformation {
 

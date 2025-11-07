@@ -1,7 +1,25 @@
 <form [formGroup]="dessinInfoForm" (ngSubmit)="doSubmit()">
-    <input formControlName="name"/>
-    <input formControlName="author"/>
-    <textarea formControlName="description"></textarea>
+    <!-- <input formControlName="name"/> -->
+
+    <mat-form-field>
+        <mat-label></mat-label>
+        <input matInput formControlName="name">
+    </mat-form-field>
+
+    <!-- <input formControlName="author" /> -->
+
+    <mat-form-field>
+        <mat-label></mat-label>
+        <input matInput formControlName="author">
+    </mat-form-field>
+
+    <!-- <textarea formControlName="description"></textarea> -->
+
+    <mat-form-field>
+        <mat-label>Textarea</mat-label>
+        <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+
     <!-- directive disabled -->
-   <button type="submit" [disabled]="!dessinInfoForm.valid">Save</button>
+    <button type="submit" [disabled]="!dessinInfoForm.valid">Save</button>
 </form>
