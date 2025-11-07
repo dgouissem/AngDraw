@@ -12,7 +12,10 @@ export class ListDraws {
    *
    */
   constructor(public dataSource: DataSource) {
-    
+
   }
 
+  doClick(id: string) {
+    console.log(`id dessin: ${id}`);
+  }
 }

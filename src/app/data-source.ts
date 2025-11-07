@@ -21,7 +21,8 @@ export class DataSource {
 
   //function
   getDessin(id: string): DessinType {
-    return {};
+   // return {id};
+    return {id : id};
   }
 
   //function
