@@ -1,1 +1,8 @@
-<p>list-draws works!</p>
+<ul>
+    @for(dessin of dataSource.getAllDessins(); track dessin.id){
+        <li>
+            {{dessin.name}}  {{dessin.author}}
+    } @empty{
+        <p>Pas de dessin</p>
+    }
+</ul>

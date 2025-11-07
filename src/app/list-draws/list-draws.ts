@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataSource } from '../data-source';
 
 @Component({
   selector: 'app-list-draws',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './list-draws.scss',
 })
 export class ListDraws {
+  /**
+   *
+   */
+  constructor(public dataSource: DataSource) {
+    
+  }
 
 }
